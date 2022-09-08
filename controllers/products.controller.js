@@ -4,7 +4,6 @@ module.exports.productsController = {
         res.json('Добро пожаловать')
     },
     getMessages1: (req, res) => {
-        // код вывода сообщений
         res.send(`id : ${req.params.id}`)
     },
     createMessage: (req, res) => {
