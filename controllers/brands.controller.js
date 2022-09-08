@@ -19,6 +19,6 @@ module.exports.brandsController = {
     },
        getMessages1: (req, res) => {
         // код вывода сообщений
-        res.send('Добро пожаловать')
+        res.send('Нет прав доступа')
     },
 };
