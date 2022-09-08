@@ -3,7 +3,10 @@ module.exports.productsController = {
         // код вывода сообщений
         res.json('Добро пожаловать')
     },
-
+    getMessages1: (req, res) => {
+        // код вывода сообщений
+        res.send(`id : ${req.params.id}`)
+    },
     createMessage: (req, res) => {
         // код добавления сообщений
         res.json(['nintendo', 'bethesda', '2K'])
@@ -11,6 +14,7 @@ module.exports.productsController = {
 
     deleteMessage: (req, res) => {
         // код удаления сообщения
-        res.send('user id: id товара бренда удален')
+        res.send('user c id: ${req.params.id} удален')
     },
+    
 };
