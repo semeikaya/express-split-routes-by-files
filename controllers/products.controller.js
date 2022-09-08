@@ -14,7 +14,7 @@ module.exports.productsController = {
 
     deleteMessage: (req, res) => {
         // код удаления сообщения
-        res.send('user c id: ${req.params.id} удален')
+        res.send(`id: ${req.params.id} товара удален`)
     },
     
 };
