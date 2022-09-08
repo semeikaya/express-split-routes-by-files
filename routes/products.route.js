@@ -3,10 +3,11 @@ const { productsController } = require('../controllers/products.controller.js');
 
 const router = Router();
 
-router.get('/users', productsController.getMessages);
-router.post('/users', productsController.createMessage);
-router.delete('/users/:id', productsController.deleteMessage);
-router.patch('/users/:id', productsController.patchMessage);
-router.get('/users/admin', productsController.getMessages1);
+router.get('/products', productsController.getMessages);
+router.get('/products/:id', productsController.getMessages1);
+router.post('/products', productsController.createMessage);
+router.delete('/products/:id', productsController.deleteMessage);
+
+
 
 module.exports = router;
