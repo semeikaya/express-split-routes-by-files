@@ -11,14 +11,7 @@ module.exports.brandsController = {
 
     deleteMessage: (req, res) => {
         // код удаления сообщения
-        res.send('user id: id бренда удален')
+        res.send(`id: ${req.params.id} бренда удален`)
     },
-     patchMessage: (req, res) => {
-    
-        res.send('user с id: id бренда изменен')
-    },
-       getMessages1: (req, res) => {
-        // код вывода сообщений
-        res.send('Нет прав доступа')
-    },
+ 
 };
