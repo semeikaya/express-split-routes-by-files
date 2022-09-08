@@ -5,8 +5,7 @@ const router = Router();
 
 router.get('/brands', brandsController.getMessages);
 router.post('/brands', brandsController.createMessage);
-router.delete('/brands/:id', brandsController.deleteMessage);
-router.patch('/brands/:id', brandsController.patchMessage);
-router.get('/brands', brandsController.getMessages1);
+router.delete('/brands', brandsController.deleteMessage);
+
 
 module.exports = router;
